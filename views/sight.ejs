@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landmark</title>
+    <link rel="stylesheet"  href="/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="/css/style.css">
+
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+</head>
+<body>
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<div class="container">
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  			     <span class="navbar-toggler-icon"></span>
+  				</button>
+ 				 <a class="navbar-brand" href="/">Let's Travel!</a>
+
+			  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+   			 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    		  <li class="nav-item active">
+      		  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+     		 </li>
+     		 <li class="nav-item">
+     	 	  <a class="nav-link" href="#">About Us</a>
+     		 </li>
+     		 <li class="nav-item">
+      		  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+			  </li>
+			  <li class="nav-item">
+      		  <a class="nav-link" href="/admin" tabindex="-1" aria-disabled="true">Admin Page</a>
+     		 </li>
+   			</ul>
+    		<form class="form-inline my-2 my-lg-0 call-me-form">
+     	 	<input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="Search">
+    	  	<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Call me</button>
+    		</form>
+  			</div>
+  			</div><!--container-->
+		</nav>
+    </header>
+    <main>
+        <div class="container sight-container">
+            <h1><%= title %></h1>
+            <hr>
+            <img src="<%= imageUrl %>" alt="big-ben">
+            <hr>
+            <p class="date"><%= date %></p>
+            <hr>
+            <p class="text"><%= text %></p>
+            <div class="map"></div>
+        </div>
+	</main>
+	
+	<script src="/js/maps.js"></script>
+</body>
+</html>
